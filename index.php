@@ -2,7 +2,7 @@
 
 	function checkPalindroma($text) {
 		$length = strlen($text);
-		for ($i=0, $j=$length-1; $i < $length; ++$i, --$j) { 
+		for ($i=0, $j=$length-1; $i < $length/2 && $j >= $length/2; ++$i, --$j) { 
 			if ($text[$i] == ' ')
 				++$i;
 			if ($text[$j] == ' ')
